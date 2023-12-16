@@ -1,3 +1,17 @@
 <template>
-    <h1>Fist app</h1>
-</template>
+    <div>
+      <h1 class="text-4xl font-bold" >Home</h1>
+      <Nav></Nav>
+    </div>
+  </template>
+  
+  <script>
+  import Nav from '../Shared/Nav.vue'  
+
+  export default {
+    components: {
+      Nav,
+    },
+  };
+  </script>
+  

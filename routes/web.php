@@ -17,3 +17,22 @@ use Inertia\Inertia;
 Route::get('/', function () {
     return Inertia::render('Home');
 });
+
+
+Route::get('/users', function () {
+    return Inertia::render('Users',[
+
+        'time' => now()->toTimeString()
+        
+    ]);
+});
+
+
+Route::get('/about', function () {
+    return Inertia::render('About');
+});
+
+
+Route::post('/logout', function () {
+    dd(request('foo'));
+});
